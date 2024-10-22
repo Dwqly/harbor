@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Docker Image to Harbor</title>
+</head>
+<body>
+    <h1>Upload Docker Image to Harbor</h1>
+    <form id="uploadForm" method="POST" action="/upload">
+        <label for="username">Docker Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Docker Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="imageName">Image Name:</label>
+        <input type="text" id="imageName" name="imageName" required>
+        <br>
+        <label for="imageTag">Image Tag:</label>
+        <input type="text" id="imageTag" name="imageTag" required>
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
